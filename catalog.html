@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Глейси</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="logo">
+        <img src="http://placehold.it/350x150" alt="Gllacy Shop">
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav__items">
+          <li class="main-nav__item  main-nav__item--active">
+            <a href="#" class="main-nav__link">Каталог</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Доставка и&nbsp;оплата</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">О&nbsp;Компании</a>
+          </li>
+        </ul>
+        <div class="main-nav__user-nav">
+          <a class="main-nav__search" href="#">Поиск</a>
+          <a class="main-nav__user-login" href="" title="Войти">Вход</a>
+          <a class="main-nav__user-basket" href="#">Корзина</a>
+        </div>
+      </nav>
+      <div class="call">
+        <span class="call__call-time">С&nbsp;10 до&nbsp;20, ежедневно</span>
+        <a class="call__phone-number" href="tel:+78124502525"><nobr>8 812 450-25-25</nobr></a>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <ul class="breadcrumb">
+        <li  class="breadcrumb__item">
+          <a href="index.html">Главная</a>
+        </li>
+        <li  class="breadcrumb__item">
+          <a href="#">Каталог</a>
+        </li>
+        <li  class="breadcrumb__item">
+          <a>Сливочное</a>
+        </li>
+      </ul>
+
+      <h1 class="page-title">Сливочное мороженое</h1>
+
+      <div class="filters-block">
+        <div class="filters-block__filters">
+          <div class="filters-block__filter">
+            <span class="filters-block__filter-title">Сортировка:</span>
+            <div class="filters-block__choice-area">
+              <select class="filters-block__field" name="sort">
+                <option value="popularity">по&nbsp;популярности</option>
+                <option value="popularity">сначала недоргие</option>
+                <option value="popularity">сначала доргие</option>
+                <option value="popularity">по&nbsp;жирности</option>
+              </select>
+            </div>
+          </div>
+          <div class="filters-block__filter">
+            <span class="filters-block__filter-title">Цена: 100&nbsp;руб. &mdash;&nbsp;500&nbsp;руб.</span>
+            <div class="filters-block__choice-area">
+              <div class="range-filter">
+                <div class="range-filter__controls">
+                  <div class="range-filter__scale">
+                    <div class="range-filter__bar"></div>
+                  </div>
+                  <div class="range-filter__toggle range-filter__toggle--min"></div>
+                  <div class="range-filter__toggle range-filter__toggle--max"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="filters-block__filter">
+            <span class="filters-block__filter-title">Жирность:</span>
+            <div class="filters-block__choice-area">
+              <div class="filters-block__entry-fields  filters-block__entry-fields--radio">
+                <div class="filters-block__entry-field">
+                  <input class="filters-block__field" type="radio" id="fatness1" name="fatness">
+                  <label class="filters-block__label" for="fatness1">0%</label>
+                </div>
+                <div class="filters-block__entry-field">
+                  <input class="filters-block__field" type="radio" id="fatness2" name="fatness" checked>
+                  <label class="filters-block__label" for="fatness2">до&nbsp;10%</label>
+                </div>
+                <div class="filters-block__entry-field">
+                  <input class="filters-block__field" type="radio" id="fatness3" name="fatness">
+                  <label class="filters-block__label" for="fatness3">до&nbsp;30%</label>
+                </div>
+                <div class="filters-block__entry-field">
+                  <input class="filters-block__field" type="radio" id="fatness4" name="fatness">
+                  <label class="filters-block__label" for="fatness4">выше 30%</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="filters-block__filter">
+            <span class="filters-block__filter-title">Наполнители:</span>
+            <div class="filters-block__choice-area">
+              <div class="filters-block__entry-fields  filters-block__entry-fields--checkbox">
+                <div class="filters-block__entry-field">
+                  <input class="filters-block__field" type="checkbox" id="supplements1" name="supplements1" checked>
+                  <label class="filters-block__label" for="supplements1">шоколадные</label>
+                </div>
+                <div class="filters-block__entry-field">
+                  <input class="filters-block__field" type="checkbox" id="supplements2" name="supplements2" checked>
+                  <label class="filters-block__label" for="supplements2">сахарные присыпки</label>
+                </div>
+                <div class="filters-block__entry-field">
+                  <input class="filters-block__field" type="checkbox" id="supplements3" name="supplements3">
+                  <label class="filters-block__label" for="supplements3">фрукты</label>
+                </div>
+                <div class="filters-block__entry-field">
+                  <input class="filters-block__field" type="checkbox" id="supplements4" name="supplements4">
+                  <label class="filters-block__label" for="supplements4">сиропы</label>
+                </div>
+                <div class="filters-block__entry-field">
+                  <input class="filters-block__field" type="checkbox" id="supplements5" name="supplements5">
+                  <label class="filters-block__label" for="supplements5">джемы</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="filters-block__apply-btn" type="button">Применить</button>
+      </div>
+
+      <div class="ice-cream-list">
+        <article class="ice-cream-block">
+          <h2 class="ice-cream-block__title">Сливочное с&nbsp;апельсиновым джемом и&nbsp;цитрусовой стружкой</h2>
+          <span class="ice-cream-block__price">
+            <span class="ice-cream-block__price-value">310</span>
+            <span class="ice-cream-block__units"><span>Рублей</span>/кг</span>
+          </span>
+        </article>
+        <article class="ice-cream-block">
+          <h2 class="ice-cream-block__title"><nobr>Сливочно-кофейное</nobr> с&nbsp;кусочками шоколада</h2>
+          <span class="ice-cream-block__price">
+            <span class="ice-cream-block__price-value">380</span>
+            <span class="ice-cream-block__units"><span>Рублей</span>/кг</span>
+          </span>
+        </article>
+        <article class="ice-cream-block">
+          <h2 class="ice-cream-block__title"><nobr>Сливочно-клубничное</nobr> с&nbsp;присыпкой из&nbsp;белого шоколада</h2>
+          <span class="ice-cream-block__price">
+            <span class="ice-cream-block__price-value">355</span>
+            <span class="ice-cream-block__units"><span>Рублей</span>/кг</span>
+          </span>
+        </article>
+        <article class="ice-cream-block">
+          <h2 class="ice-cream-block__title">Сливочное <nobr>крем-брюле</nobr> с&nbsp;карамельной подливкой</h2>
+          <span class="ice-cream-block__price">
+            <span class="ice-cream-block__price-value">415</span>
+            <span class="ice-cream-block__units"><span>Рублей</span>/кг</span>
+          </span>
+        </article>
+        <article class="ice-cream-block">
+          <h2 class="ice-cream-block__title">Сливочное с&nbsp;брусничным джемом</h2>
+          <span class="ice-cream-block__price">
+            <span class="ice-cream-block__price-value">325</span>
+            <span class="ice-cream-block__units"><span>Рублей</span>/кг</span>
+          </span>
+        </article>
+        <article class="ice-cream-block">
+          <h2 class="ice-cream-block__title"><nobr>Сливочно-черничное</nobr> с&nbsp;цельными ягодами черники</h2>
+          <span class="ice-cream-block__price">
+            <span class="ice-cream-block__price-value">410</span>
+            <span class="ice-cream-block__units"><span>Рублей</span>/кг</span>
+          </span>
+        </article>
+        <article class="ice-cream-block">
+          <h2 class="ice-cream-block__title"><nobr>Сливочно-лимонное</nobr> с&nbsp;карамельной присыпкой</h2>
+          <span class="ice-cream-block__price">
+            <span class="ice-cream-block__price-value">375</span>
+            <span class="ice-cream-block__units"><span>Рублей</span>/кг</span>
+          </span>
+        </article>
+        <article class="ice-cream-block">
+          <h2 class="ice-cream-block__title">Сливочное с&nbsp;шоколадной стружкой</h2>
+          <span class="ice-cream-block__price">
+            <span class="ice-cream-block__price-value">320</span>
+            <span class="ice-cream-block__units"><span>Рублей</span>/кг</span>
+          </span>
+        </article>
+        <article class="ice-cream-block">
+          <h2 class="ice-cream-block__title"><nobr>Сливочно-ванильное</nobr> с&nbsp;кусочками шоколада</h2>
+          <span class="ice-cream-block__price">
+            <span class="ice-cream-block__price-value">440</span>
+            <span class="ice-cream-block__units"><span>Рублей</span>/кг</span>
+          </span>
+        </article>
+        <article class="ice-cream-block">
+          <h2 class="ice-cream-block__title">Сливочноe с&nbsp;ментоловым сиропом</h2>
+          <span class="ice-cream-block__price">
+            <span class="ice-cream-block__price-value">435</span>
+            <span class="ice-cream-block__units"><span>Рублей</span>/кг</span>
+          </span>
+        </article>
+        <article class="ice-cream-block">
+          <h2 class="ice-cream-block__title">Сливочное с&nbsp;кусочками черного шоколада</h2>
+          <span class="ice-cream-block__price">
+            <span class="ice-cream-block__price-value">355</span>
+            <span class="ice-cream-block__units"><span>Рублей</span>/кг</span>
+          </span>
+        </article>
+        <article class="ice-cream-block">
+          <h2 class="ice-cream-block__title">Сливочное с&nbsp;мятным сиропом</h2>
+          <span class="ice-cream-block__price">
+            <span class="ice-cream-block__price-value">420</span>
+            <span class="ice-cream-block__units"><span>Рублей</span>/кг</span>
+          </span>
+        </article>
+      </div>
+      <ul class="pagination">
+        <li class="pagination__item">
+          <a class="pagination__link" href="#">1</a>
+        </li>
+        <li class="pagination__item  pagination__item--active">
+          <a class="pagination__link" href="#">2</a>
+        </li>
+        <li class="pagination__item">
+          <a class="pagination__link" href="#">3</a>
+        </li>
+        <li class="pagination__item">
+          <a class="pagination__link" href="#">4</a>
+        </li>
+        <li class="pagination__item">
+          <a class="pagination__link" href="#">5</a>
+        </li>
+      </ul>
+    </main>
+
+    <footer class="page-footer  page-footer--index-page">
+      <div class="social-links">
+        <a class="social-links__btn social-links__btn--twitter" href="https://twitter.com/" target="_blank">Twitter</a>
+        <a class="social-links__btn social-links__btn--instagram" href="https://www.instagram.com/" target="_blank">Instagram</a>
+        <a class="social-links__btn social-links__btn--facebook" href="https://www.facebook.com/" target="_blank">Facebook</a>
+        <a class="social-links__btn social-links__btn--vk" href="https://vk.com" target="_blank">Вконтакте</a>
+      </div>
+      <div class="additional-information">
+        <a class="additional-information__link" href="#">Для поставщиков</a>
+        <a class="additional-information__link" href="#">О&nbsp;производстве</a>
+        <a class="additional-information__link" href="#">Наши документы</a>
+        <a class="additional-information__link" href="#">Экологические стандарты</a>
+      </div>
+      <div class="page-footer__copyright">
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/" target="_blank">
+          Сделано в&nbsp;HTML Academy &copy; 2016
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
