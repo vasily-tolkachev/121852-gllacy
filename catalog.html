@@ -1,35 +1,40 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Глейси</title>
+  <!-- <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css"> -->
+</head>
+<body>
+  <div class="wrapper">
     <header class="page-header">
-      <a class="logo">
-        <img src="http://placehold.it/350x150" alt="Gllacy Shop">
-      </a>
-      <nav class="main-nav">
-        <ul class="main-nav__items">
-          <li class="main-nav__item  main-nav__item--active">
-            <a href="#" class="main-nav__link">Каталог</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#" class="main-nav__link">Доставка и&nbsp;оплата</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#" class="main-nav__link">О&nbsp;Компании</a>
-          </li>
-        </ul>
-        <div class="main-nav__user-nav">
-          <a class="main-nav__search" href="#">Поиск</a>
-          <a class="main-nav__user-login" href="" title="Войти">Вход</a>
-          <a class="main-nav__user-basket" href="#">Корзина</a>
+      <div class="page-header__wrapper">
+        <a class="logo">
+          <img src="img/logo.png" width="153" height="63" alt="Gllacy Shop">
+        </a>
+        <nav class="main-nav">
+          <ul class="main-nav__items">
+            <li class="main-nav__item  main-nav__item--active">
+              <a href="#" class="main-nav__link">Каталог</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Доставка и&nbsp;оплата</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">О&nbsp;Компании</a>
+            </li>
+          </ul>
+          <div class="main-nav__user-nav">
+            <a class="main-nav__search" href="#">Поиск</a>
+            <a class="main-nav__user-login" href="" title="Войти">Вход</a>
+            <a class="main-nav__user-basket" href="#">Корзина</a>
+          </div>
+        </nav>
+        <div class="call">
+          <span class="call__call-time">С&nbsp;10 до&nbsp;20, ежедневно</span>
+          <a class="call__phone-number" href="tel:+78124502525"><nobr>8 812 450-25-25</nobr></a>
         </div>
-      </nav>
-      <div class="call">
-        <span class="call__call-time">С&nbsp;10 до&nbsp;20, ежедневно</span>
-        <a class="call__phone-number" href="tel:+78124502525"><nobr>8 812 450-25-25</nobr></a>
       </div>
     </header>
 
@@ -130,90 +135,104 @@
       </div>
 
       <div class="ice-cream-list">
-        <article class="ice-cream-block">
-          <h2 class="ice-cream-block__title">Сливочное с&nbsp;апельсиновым джемом и&nbsp;цитрусовой стружкой</h2>
-          <span class="ice-cream-block__price">
-            <span class="ice-cream-block__price-value">310</span>
-            <span class="ice-cream-block__units"><span>Рублей</span>/кг</span>
-          </span>
-        </article>
-        <article class="ice-cream-block">
-          <h2 class="ice-cream-block__title"><nobr>Сливочно-кофейное</nobr> с&nbsp;кусочками шоколада</h2>
-          <span class="ice-cream-block__price">
-            <span class="ice-cream-block__price-value">380</span>
-            <span class="ice-cream-block__units"><span>Рублей</span>/кг</span>
-          </span>
-        </article>
-        <article class="ice-cream-block">
-          <h2 class="ice-cream-block__title"><nobr>Сливочно-клубничное</nobr> с&nbsp;присыпкой из&nbsp;белого шоколада</h2>
-          <span class="ice-cream-block__price">
-            <span class="ice-cream-block__price-value">355</span>
-            <span class="ice-cream-block__units"><span>Рублей</span>/кг</span>
-          </span>
-        </article>
-        <article class="ice-cream-block">
-          <h2 class="ice-cream-block__title">Сливочное <nobr>крем-брюле</nobr> с&nbsp;карамельной подливкой</h2>
-          <span class="ice-cream-block__price">
-            <span class="ice-cream-block__price-value">415</span>
-            <span class="ice-cream-block__units"><span>Рублей</span>/кг</span>
-          </span>
-        </article>
-        <article class="ice-cream-block">
-          <h2 class="ice-cream-block__title">Сливочное с&nbsp;брусничным джемом</h2>
-          <span class="ice-cream-block__price">
-            <span class="ice-cream-block__price-value">325</span>
-            <span class="ice-cream-block__units"><span>Рублей</span>/кг</span>
-          </span>
-        </article>
-        <article class="ice-cream-block">
-          <h2 class="ice-cream-block__title"><nobr>Сливочно-черничное</nobr> с&nbsp;цельными ягодами черники</h2>
-          <span class="ice-cream-block__price">
-            <span class="ice-cream-block__price-value">410</span>
-            <span class="ice-cream-block__units"><span>Рублей</span>/кг</span>
-          </span>
-        </article>
-        <article class="ice-cream-block">
-          <h2 class="ice-cream-block__title"><nobr>Сливочно-лимонное</nobr> с&nbsp;карамельной присыпкой</h2>
-          <span class="ice-cream-block__price">
-            <span class="ice-cream-block__price-value">375</span>
-            <span class="ice-cream-block__units"><span>Рублей</span>/кг</span>
-          </span>
-        </article>
-        <article class="ice-cream-block">
-          <h2 class="ice-cream-block__title">Сливочное с&nbsp;шоколадной стружкой</h2>
-          <span class="ice-cream-block__price">
-            <span class="ice-cream-block__price-value">320</span>
-            <span class="ice-cream-block__units"><span>Рублей</span>/кг</span>
-          </span>
-        </article>
-        <article class="ice-cream-block">
-          <h2 class="ice-cream-block__title"><nobr>Сливочно-ванильное</nobr> с&nbsp;кусочками шоколада</h2>
-          <span class="ice-cream-block__price">
-            <span class="ice-cream-block__price-value">440</span>
-            <span class="ice-cream-block__units"><span>Рублей</span>/кг</span>
-          </span>
-        </article>
-        <article class="ice-cream-block">
-          <h2 class="ice-cream-block__title">Сливочноe с&nbsp;ментоловым сиропом</h2>
-          <span class="ice-cream-block__price">
-            <span class="ice-cream-block__price-value">435</span>
-            <span class="ice-cream-block__units"><span>Рублей</span>/кг</span>
-          </span>
-        </article>
-        <article class="ice-cream-block">
-          <h2 class="ice-cream-block__title">Сливочное с&nbsp;кусочками черного шоколада</h2>
-          <span class="ice-cream-block__price">
-            <span class="ice-cream-block__price-value">355</span>
-            <span class="ice-cream-block__units"><span>Рублей</span>/кг</span>
-          </span>
-        </article>
-        <article class="ice-cream-block">
-          <h2 class="ice-cream-block__title">Сливочное с&nbsp;мятным сиропом</h2>
-          <span class="ice-cream-block__price">
-            <span class="ice-cream-block__price-value">420</span>
-            <span class="ice-cream-block__units"><span>Рублей</span>/кг</span>
-          </span>
-        </article>
+        <div class="ice-cream-list__wrapper">
+          <article class="ice-cream-block">
+            <img class="ice-cream-block__image" src="img/ice-cream-img-1.png" width="267" height="267" alt="Мороженое">
+            <span class="ice-cream-block__price">
+              <span class="ice-cream-block__price-value">310</span>
+              <span class="ice-cream-block__units"><span>Рублей</span>/кг</span>
+            </span>
+            <a href="#" class="ice-cream-block__link">Сливочное с&nbsp;апельсиновым джемом и&nbsp;цитрусовой стружкой</a>
+          </article>
+          <article class="ice-cream-block">
+            <img class="ice-cream-block__image" src="img/ice-cream-img-2.png" width="267" height="267" alt="Мороженое">
+            <span class="ice-cream-block__price">
+              <span class="ice-cream-block__price-value">380</span>
+              <span class="ice-cream-block__units"><span>Рублей</span>/кг</span>
+            </span>
+            <a href="#" class="ice-cream-block__link"><nobr>Сливочно-кофейное</nobr> с&nbsp;кусочками шоколада</a>
+          </article>
+          <article class="ice-cream-block">
+            <img class="ice-cream-block__image" src="img/ice-cream-img-3.png" width="267" height="267" alt="Мороженое">
+            <span class="ice-cream-block__price">
+              <span class="ice-cream-block__price-value">355</span>
+              <span class="ice-cream-block__units"><span>Рублей</span>/кг</span>
+            </span>
+            <a href="#" class="ice-cream-block__link"><nobr>Сливочно-клубничное</nobr> с&nbsp;присыпкой из&nbsp;белого шоколада</a>
+          </article>
+          <article class="ice-cream-block">
+            <img class="ice-cream-block__image" src="img/ice-cream-img-4.png" width="267" height="267" alt="Мороженое">
+            <span class="ice-cream-block__price">
+              <span class="ice-cream-block__price-value">415</span>
+              <span class="ice-cream-block__units"><span>Рублей</span>/кг</span>
+            </span>
+            <a href="#" class="ice-cream-block__link">Сливочное <nobr>крем-брюле</nobr> с&nbsp;карамельной подливкой</a>
+          </article>
+          <article class="ice-cream-block">
+            <img class="ice-cream-block__image" src="img/ice-cream-img-5.png" width="267" height="267" alt="Мороженое">
+            <span class="ice-cream-block__price">
+              <span class="ice-cream-block__price-value">325</span>
+              <span class="ice-cream-block__units"><span>Рублей</span>/кг</span>
+            </span>
+            <a href="#" class="ice-cream-block__link">Сливочное с&nbsp;брусничным джемом</a>
+          </article>
+          <article class="ice-cream-block">
+            <img class="ice-cream-block__image" src="img/ice-cream-img-6.png" width="267" height="267" alt="Мороженое">
+            <span class="ice-cream-block__price">
+              <span class="ice-cream-block__price-value">410</span>
+              <span class="ice-cream-block__units"><span>Рублей</span>/кг</span>
+            </span>
+            <a href="#" class="ice-cream-block__link"><nobr>Сливочно-черничное</nobr> с&nbsp;цельными ягодами черники</a>
+          </article>
+          <article class="ice-cream-block">
+            <img class="ice-cream-block__image" src="img/ice-cream-img-7.png" width="267" height="267" alt="Мороженое">
+            <span class="ice-cream-block__price">
+              <span class="ice-cream-block__price-value">375</span>
+              <span class="ice-cream-block__units"><span>Рублей</span>/кг</span>
+            </span>
+            <a href="#" class="ice-cream-block__link"><nobr>Сливочно-лимонное</nobr> с&nbsp;карамельной присыпкой</a>
+          </article>
+          <article class="ice-cream-block">
+            <img class="ice-cream-block__image" src="img/ice-cream-img-8.png" width="267" height="267" alt="Мороженое">
+            <span class="ice-cream-block__price">
+              <span class="ice-cream-block__price-value">320</span>
+              <span class="ice-cream-block__units"><span>Рублей</span>/кг</span>
+            </span>
+            <a href="#" class="ice-cream-block__link">Сливочное с&nbsp;шоколадной стружкой</a>
+          </article>
+          <article class="ice-cream-block">
+            <img class="ice-cream-block__image" src="img/ice-cream-img-9.png" width="267" height="267" alt="Мороженое">
+            <span class="ice-cream-block__price">
+              <span class="ice-cream-block__price-value">440</span>
+              <span class="ice-cream-block__units"><span>Рублей</span>/кг</span>
+            </span>
+            <a href="#" class="ice-cream-block__link"><nobr>Сливочно-ванильное</nobr> с&nbsp;кусочками шоколада</a>
+          </article>
+          <article class="ice-cream-block">
+            <img class="ice-cream-block__image" src="img/ice-cream-img-10.png" width="267" height="267" alt="Мороженое">
+            <span class="ice-cream-block__price">
+              <span class="ice-cream-block__price-value">435</span>
+              <span class="ice-cream-block__units"><span>Рублей</span>/кг</span>
+            </span>
+            <a href="#" class="ice-cream-block__link">Сливочноe с&nbsp;ментоловым сиропом</a>
+          </article>
+          <article class="ice-cream-block">
+            <img class="ice-cream-block__image" src="img/ice-cream-img-11.png" width="267" height="267" alt="Мороженое">
+            <span class="ice-cream-block__price">
+              <span class="ice-cream-block__price-value">355</span>
+              <span class="ice-cream-block__units"><span>Рублей</span>/кг</span>
+            </span>
+            <a href="#" class="ice-cream-block__link">Сливочное с&nbsp;кусочками черного шоколада</a>
+          </article>
+          <article class="ice-cream-block">
+            <img class="ice-cream-block__image" src="img/ice-cream-img-12.png" width="267" height="267" alt="Мороженое">
+            <span class="ice-cream-block__price">
+              <span class="ice-cream-block__price-value">420</span>
+              <span class="ice-cream-block__units"><span>Рублей</span>/кг</span>
+            </span>
+            <a href="#" class="ice-cream-block__link">Сливочное с&nbsp;мятным сиропом</a>
+          </article>
+        </div>
       </div>
       <ul class="pagination">
         <li class="pagination__item">
@@ -253,5 +272,6 @@
         </a>
       </div>
     </footer>
-  </body>
+  </div>
+</body>
 </html>
