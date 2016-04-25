@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="25.125" viewBox="0 0 24 25.125">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f8f7f4;
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="269" y="215.875" width="24" height="25.125" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dy="2" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="1.414"/>
+      <feFlood result="flood" flood-opacity="0.1"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="Круглый_маркер" data-name="Круглый маркер" class="cls-1" d="M280.16,215.885A10.115,10.115,0,1,1,270.045,226,10.115,10.115,0,0,1,280.16,215.885Z" transform="translate(-269 -215.875)"/>
+</svg>

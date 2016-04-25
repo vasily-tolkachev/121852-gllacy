@@ -9,26 +9,27 @@
 <body>
   <div class="wrapper">
     <header class="page-header">
-      <div class="page-header__wrapper">
-        <a class="logo">
-          <img src="img/logo.svg" width="153" height="63" alt="Gllacy Shop">
-        </a>
-        <nav class="main-nav">
+    <div class="page-header__content">
+      <div class="page-header__wrapper clearfix">
+        <nav class="main-nav clearfix">
+          <a class="logo">
+            <img src="img/logo.png" width="153" height="63" alt="Gllacy Shop">
+          </a>
           <ul class="main-nav__items">
             <li class="main-nav__item  main-nav__item--active">
-              <a href="#" class="main-nav__link">Каталог</a>
+              <a href="#" class="link"><span>Каталог</span></a>
             </li>
             <li class="main-nav__item">
-              <a href="#" class="main-nav__link">Доставка и&nbsp;оплата</a>
+              <a href="#" class="link"><span>Доставка и&nbsp;оплата</span></a>
             </li>
             <li class="main-nav__item">
-              <a href="#" class="main-nav__link">О&nbsp;Компании</a>
+              <a href="#" class="link"><span>О&nbsp;Компании</span></a>
             </li>
           </ul>
           <div class="main-nav__user-nav">
             <a class="main-nav__search" href="#">Поиск</a>
             <a class="main-nav__user-login" href="" title="Войти">Вход</a>
-            <a class="main-nav__user-basket" href="#">Корзина</a>
+            <a class="main-nav__user-basket" href="#">Пусто</a>
           </div>
         </nav>
         <div class="call">
@@ -36,39 +37,42 @@
           <a class="call__phone-number" href="tel:+78124502525"><nobr>8 812 450-25-25</nobr></a>
         </div>
       </div>
-    </header>
+    </div>
+  </header>
 
     <main class="page-main">
       <ul class="breadcrumb">
         <li  class="breadcrumb__item">
-          <a href="index.html">Главная</a>
+          <a  class="link"href="index.html"><span>Главная</span></a>
         </li>
         <li  class="breadcrumb__item">
-          <a href="#">Каталог</a>
+          <a  class="link" href="#"><span>Каталог</span></a>
         </li>
-        <li  class="breadcrumb__item">
-          <a>Сливочное</a>
+        <li class="breadcrumb__item">
+          <a class="link"><span>Сливочное</span></a>
         </li>
       </ul>
 
       <h1 class="page-title">Сливочное мороженое</h1>
 
       <div class="filters-block">
-        <div class="filters-block__filters">
+
           <div class="filters-block__filter">
             <span class="filters-block__filter-title">Сортировка:</span>
-            <div class="filters-block__choice-area">
-              <select class="filters-block__field" name="sort">
-                <option value="popularity">по&nbsp;популярности</option>
-                <option value="popularity">сначала недоргие</option>
-                <option value="popularity">сначала доргие</option>
-                <option value="popularity">по&nbsp;жирности</option>
-              </select>
+            <div class="filters-block__choice-area  filters-block__choice-area--sort">
+              <div class="filters-block__entry-field">
+                <select class="filters-block__field  filters-block__field--select" name="sort">
+                  <option value="popularity">по&nbsp;популярности</option>
+                  <option value="popularity">сначала недоргие</option>
+                  <option value="popularity">сначала доргие</option>
+                  <option value="popularity">по&nbsp;жирности</option>
+                </select>
+              </div>
             </div>
           </div>
           <div class="filters-block__filter">
             <span class="filters-block__filter-title">Цена: 100&nbsp;руб. &mdash;&nbsp;500&nbsp;руб.</span>
-            <div class="filters-block__choice-area">
+            <div class="filters-block__choice-area  filters-block__choice-area--range">
               <div class="range-filter">
                 <div class="range-filter__controls">
                   <div class="range-filter__scale">
@@ -83,22 +87,22 @@
           <div class="filters-block__filter">
             <span class="filters-block__filter-title">Жирность:</span>
             <div class="filters-block__choice-area">
-              <div class="filters-block__entry-fields  filters-block__entry-fields--radio">
+              <div class="filters-block__entry-fields">
                 <div class="filters-block__entry-field">
-                  <input class="filters-block__field" type="radio" id="fatness1" name="fatness">
-                  <label class="filters-block__label" for="fatness1">0%</label>
+                  <input class="filters-block__field  filters-block__field--switch" type="radio" id="fatness1" name="fatness">
+                  <label class="filters-block__label  filters-block__label--switch" for="fatness1">0%</label>
                 </div>
                 <div class="filters-block__entry-field">
-                  <input class="filters-block__field" type="radio" id="fatness2" name="fatness" checked>
-                  <label class="filters-block__label" for="fatness2">до&nbsp;10%</label>
+                  <input class="filters-block__field  filters-block__field--switch" type="radio" id="fatness2" name="fatness" checked>
+                  <label class="filters-block__label  filters-block__label--switch" for="fatness2">до&nbsp;10%</label>
                 </div>
                 <div class="filters-block__entry-field">
-                  <input class="filters-block__field" type="radio" id="fatness3" name="fatness">
-                  <label class="filters-block__label" for="fatness3">до&nbsp;30%</label>
+                  <input class="filters-block__field  filters-block__field--switch" type="radio" id="fatness3" name="fatness">
+                  <label class="filters-block__label  filters-block__label--switch" for="fatness3">до&nbsp;30%</label>
                 </div>
                 <div class="filters-block__entry-field">
-                  <input class="filters-block__field" type="radio" id="fatness4" name="fatness">
-                  <label class="filters-block__label" for="fatness4">выше 30%</label>
+                  <input class="filters-block__field  filters-block__field--switch" type="radio" id="fatness4" name="fatness">
+                  <label class="filters-block__label  filters-block__label--switch" for="fatness4">выше 30%</label>
                 </div>
               </div>
             </div>
@@ -106,30 +110,29 @@
           <div class="filters-block__filter">
             <span class="filters-block__filter-title">Наполнители:</span>
             <div class="filters-block__choice-area">
-              <div class="filters-block__entry-fields  filters-block__entry-fields--checkbox">
+              <div class="filters-block__entry-fields">
                 <div class="filters-block__entry-field">
-                  <input class="filters-block__field" type="checkbox" id="supplements1" name="supplements1" checked>
-                  <label class="filters-block__label" for="supplements1">шоколадные</label>
+                  <input class="filters-block__field  filters-block__field--switch" type="checkbox" id="supplements1" name="supplements1" checked>
+                  <label class="filters-block__label  filters-block__label--switch  filters-block__label--checkbox  filters-block__label--checkbox" for="supplements1">шоколадные</label>
                 </div>
                 <div class="filters-block__entry-field">
-                  <input class="filters-block__field" type="checkbox" id="supplements2" name="supplements2" checked>
-                  <label class="filters-block__label" for="supplements2">сахарные присыпки</label>
+                  <input class="filters-block__field  filters-block__field--switch" type="checkbox" id="supplements2" name="supplements2" checked>
+                  <label class="filters-block__label  filters-block__label--switch  filters-block__label--checkbox" for="supplements2">сахарные присыпки</label>
                 </div>
                 <div class="filters-block__entry-field">
-                  <input class="filters-block__field" type="checkbox" id="supplements3" name="supplements3">
-                  <label class="filters-block__label" for="supplements3">фрукты</label>
+                  <input class="filters-block__field  filters-block__field--switch" type="checkbox" id="supplements3" name="supplements3">
+                  <label class="filters-block__label  filters-block__label--switch  filters-block__label--checkbox" for="supplements3">фрукты</label>
                 </div>
                 <div class="filters-block__entry-field">
-                  <input class="filters-block__field" type="checkbox" id="supplements4" name="supplements4">
-                  <label class="filters-block__label" for="supplements4">сиропы</label>
+                  <input class="filters-block__field  filters-block__field--switch" type="checkbox" id="supplements4" name="supplements4">
+                  <label class="filters-block__label  filters-block__label--switch  filters-block__label--checkbox" for="supplements4">сиропы</label>
                 </div>
                 <div class="filters-block__entry-field">
-                  <input class="filters-block__field" type="checkbox" id="supplements5" name="supplements5">
-                  <label class="filters-block__label" for="supplements5">джемы</label>
+                  <input class="filters-block__field  filters-block__field--switch" type="checkbox" id="supplements5" name="supplements5">
+                  <label class="filters-block__label  filters-block__label--switch  filters-block__label--checkbox" for="supplements5">джемы</label>
                 </div>
               </div>
             </div>
-          </div>
         </div>
         <button class="filters-block__apply-btn" type="button">Применить</button>
       </div>
@@ -146,7 +149,7 @@
                 <span class="ice-cream-block__units"><span>Рублей</span>/кг</span>
               </span>
             </div>
-            <a href="#" class="ice-cream-block__link"><span>Сливочное с&nbsp;апельсиновым джемом и&nbsp;цитрусовой стружкой</span></a>
+            <a href="#" class="link"><span>Сливочное с&nbsp;апельсиновым джемом и&nbsp;цитрусовой стружкой</span></a>
           </article>
           <article class="ice-cream-block">
             <div class="ice-cream-block__view">
@@ -158,7 +161,7 @@
                 <span class="ice-cream-block__units"><span>Рублей</span>/кг</span>
               </span>
             </div>
-            <a href="#" class="ice-cream-block__link"><span><nobr>Сливочно-кофейное</nobr> с&nbsp;кусочками шоколада</span></a>
+            <a href="#" class="link"><span><nobr>Сливочно-кофейное</nobr> с&nbsp;кусочками шоколада</span></a>
           </article>
           <article class="ice-cream-block">
             <div class="ice-cream-block__view">
@@ -170,7 +173,7 @@
                 <span class="ice-cream-block__units"><span>Рублей</span>/кг</span>
               </span>
             </div>
-            <a href="#" class="ice-cream-block__link"><span><nobr>Сливочно-клубничное</nobr> с&nbsp;присыпкой из&nbsp;белого шоколада</span></a>
+            <a href="#" class="link"><span><nobr>Сливочно-клубничное</nobr> с&nbsp;присыпкой из&nbsp;белого шоколада</span></a>
           </article>
           <article class="ice-cream-block">
             <div class="ice-cream-block__view">
@@ -182,7 +185,7 @@
                 <span class="ice-cream-block__units"><span>Рублей</span>/кг</span>
               </span>
             </div>
-            <a href="#" class="ice-cream-block__link"><span>Сливочное <nobr>крем-брюле</nobr> с&nbsp;карамельной подливкой</span></a>
+            <a href="#" class="link"><span>Сливочное <nobr>крем-брюле</nobr> с&nbsp;карамельной подливкой</span></a>
           </article>
           <article class="ice-cream-block">
             <div class="ice-cream-block__view">
@@ -194,7 +197,7 @@
                 <span class="ice-cream-block__units"><span>Рублей</span>/кг</span>
               </span>
             </div>
-            <a href="#" class="ice-cream-block__link"><span>Сливочное с&nbsp;брусничным джемом</span></a>
+            <a href="#" class="link"><span>Сливочное с&nbsp;брусничным джемом</span></a>
           </article>
           <article class="ice-cream-block">
             <div class="ice-cream-block__view">
@@ -206,7 +209,7 @@
                 <span class="ice-cream-block__units"><span>Рублей</span>/кг</span>
               </span>
             </div>
-            <a href="#" class="ice-cream-block__link"><span><nobr>Сливочно-черничное</nobr> с&nbsp;цельными ягодами черники</span></a>
+            <a href="#" class="link"><span><nobr>Сливочно-черничное</nobr> с&nbsp;цельными ягодами черники</span></a>
           </article>
           <article class="ice-cream-block">
             <div class="ice-cream-block__view">
@@ -218,7 +221,7 @@
                 <span class="ice-cream-block__units"><span>Рублей</span>/кг</span>
               </span>
             </div>
-            <a href="#" class="ice-cream-block__link"><span><nobr>Сливочно-лимонное</nobr> с&nbsp;карамельной присыпкой</span></a>
+            <a href="#" class="link"><span><nobr>Сливочно-лимонное</nobr> с&nbsp;карамельной присыпкой</span></a>
           </article>
           <article class="ice-cream-block">
            <div class="ice-cream-block__view">
@@ -230,7 +233,7 @@
                <span class="ice-cream-block__units"><span>Рублей</span>/кг</span>
              </span>
            </div>
-            <a href="#" class="ice-cream-block__link"><span>Сливочное с&nbsp;шоколадной стружкой</span></a>
+            <a href="#" class="link"><span>Сливочное с&nbsp;шоколадной стружкой</span></a>
           </article>
           <article class="ice-cream-block">
             <div class="ice-cream-block__view">
@@ -242,7 +245,7 @@
                 <span class="ice-cream-block__units"><span>Рублей</span>/кг</span>
               </span>
             </div>
-            <a href="#" class="ice-cream-block__link"><span><nobr>Сливочно-ванильное</nobr> с кусочками шоколада</span></a>
+            <a href="#" class="link"><span><nobr>Сливочно-ванильное</nobr> с кусочками шоколада</span></a>
           </article>
           <article class="ice-cream-block">
             <div class="ice-cream-block__view">
@@ -254,7 +257,7 @@
                 <span class="ice-cream-block__units"><span>Рублей</span>/кг</span>
               </span>
             </div>
-            <a href="#" class="ice-cream-block__link"><span>Сливочноe с&nbsp;ментоловым сиропом</span></a>
+            <a href="#" class="link"><span>Сливочноe с&nbsp;ментоловым сиропом</span></a>
           </article>
           <article class="ice-cream-block">
             <div class="ice-cream-block__view">
@@ -266,7 +269,7 @@
                 <span class="ice-cream-block__units"><span>Рублей</span>/кг</span>
               </span>
             </div>
-            <a href="#" class="ice-cream-block__link"><span>Сливочное с&nbsp;кусочками черного шоколада</span></a>
+            <a href="#" class="link"><span>Сливочное с&nbsp;кусочками черного шоколада</span></a>
           </article>
           <article class="ice-cream-block">
             <div class="ice-cream-block__view">
@@ -278,7 +281,7 @@
                 <span class="ice-cream-block__units"><span>Рублей</span>/кг</span>
               </span>
             </div>
-            <a href="#" class="ice-cream-block__link"><span>Сливочное с&nbsp;мятным сиропом</span></a>
+            <a href="#" class="link"><span>Сливочное с&nbsp;мятным сиропом</span></a>
           </article>
         </div>
       </div>
@@ -326,12 +329,61 @@
           <a class="additional-information__link" href="#">Экологические стандарты</a>
         </div>
         <div class="page-footer__copyright">
-          <a class="page-footer__copyright-link" href="https://htmlacademy.ru/" target="_blank">
-            Сделано в&nbsp;HTML Academy &copy; 2016
+          <a class="page-footer__copyright-logo" href="https://htmlacademy.ru/" target="_blank">
+            <img src="img/html-academy-logo.svg" width="108" height="37" alt="Gllacy Shop">
           </a>
+          <span class="page-footer__copyright-text" href="https://htmlacademy.ru/" target="_blank">
+            Сделано в&nbsp;
+            <a class="link"  href="https://htmlacademy.ru/" target="_blank"><span>HTML Academy</span></a>
+            &copy; 2016
+          </span>
         </div>
       </div>
     </footer>
+  </div>
+  <div class="popup  popup--basket  popup--hidden">
+    <div class="popup__wrapper">
+      <div class="popup__content">
+        <div class="basket-content">
+          <ul class="basket-content__list">
+            <li class="basket-content__item">
+              <button class="basket-content__remove-btn" type="button">Убрать из корзины</button>
+              <div class="basket-content__image-wrapper">
+                <img class="basket-content__image" src="img/ice-cream-img-1.jpg" alt="мороженка" width="35" width="35">
+              </div>
+              <span class="basket-content__name">Пломбир с&nbsp;апельсиновым джемом</span>
+              <span class="basket-content__price-details">
+                1,5 кг&nbsp;x <span>200&nbsp;руб.</span>
+              </span>
+              <span class="basket-content__item-price">
+                300&nbsp;руб.
+              </span>
+            </li>
+            <li class="basket-content__item">
+              <button class="basket-content__remove-btn" type="button">Убрать из корзины</button>
+              <div class="basket-content__image-wrapper">
+                <img class="basket-content__image" src="img/ice-cream-img-3.jpg" alt="мороженка" width="35" width="35">
+              </div>
+              <span class="basket-content__name">Клубничный пломбир с&nbsp;присыпкой из&nbsp;белого шоколада</span>
+              <span class="basket-content__price-details">
+                1,5 кг&nbsp;x <span>300&nbsp;руб.</span>
+              </span>
+              <span class="basket-content__item-price">
+                450&nbsp;руб.
+              </span>
+            </li>
+          </ul>
+          <div class="basket-content__order">
+            <span class="basket-content__price">
+              Итого:
+              <span class="basket-content__price-number">750</span>
+              руб.
+            </span>
+            <button class="button" type="button">Оформить заказ</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 </html>
