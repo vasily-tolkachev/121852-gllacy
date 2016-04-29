@@ -206,25 +206,25 @@
       <iframe height="400px" width="100%" frameBorder="0" scrolling="no"
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d840.3751722293583!2d30.320843466741838!3d59.936120064599706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310f879780b7%3A0x267b6b7f4f614fb9!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDMxLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1457108867986">
     </iframe>
-<!--      <div class="contact-block clearfix"> -->
+    <!--      <div class="contact-block clearfix"> -->
 <!--       <div class="contact-block__wrapper">
-        <div class="contact-block__content  clearfix"> -->
-          <div class="contact-block">
-            <div class="contact-block__contact">
-              <span class="contact-block__title">Адрес главного офиса и&nbsp;офлайн магазина:</span>
-              <span class="contact-block__address">ул.&nbsp;Большая Конюшенная 19/8, <nobr>Санкт-Петербург</nobr></span>
-            </div>
-            <div class="contact-block__contact">
-              <span class="contact-block__title">Для заказов по&nbsp;телефону:</span>
-              <a class="contact-block__address" href="tel:+78124502525"><nobr>8 812 450-25-25</nobr></a>
-              <span  class="contact-block__working-hours">(с&nbsp;10 до&nbsp;20 ежедневно)</span>
-            </div>
-            <a class="button">Форма обратной связи</a>
-          </div>
+  <div class="contact-block__content  clearfix"> -->
+    <div class="contact-block">
+      <div class="contact-block__contact">
+        <span class="contact-block__title">Адрес главного офиса и&nbsp;офлайн магазина:</span>
+        <span class="contact-block__address">ул.&nbsp;Большая Конюшенная 19/8, <nobr>Санкт-Петербург</nobr></span>
+      </div>
+      <div class="contact-block__contact">
+        <span class="contact-block__title">Для заказов по&nbsp;телефону:</span>
+        <a class="contact-block__address" href="tel:+78124502525"><nobr>8 812 450-25-25</nobr></a>
+        <span  class="contact-block__working-hours">(с&nbsp;10 до&nbsp;20 ежедневно)</span>
+      </div>
+      <a class="button">Форма обратной связи</a>
+    </div>
 <!--         </div>
-      </div> -->
-  <!--   </div> -->
-   </div>
+</div> -->
+<!--   </div> -->
+</div>
 
 </main>
 
@@ -247,5 +247,128 @@
     </a>
   </div>
 </footer>
+<div class="popup  popup--basket  popup--hidden">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__window  popup__window--basket">
+        <div class="basket-content clearfix">
+          <ul class="basket-content__list">
+            <li class="basket-content__item">
+              <button class="basket-content__remove-btn" type="button">Убрать из корзины</button>
+              <div class="basket-content__image-wrapper">
+                <img class="basket-content__image" src="img/ice-cream-img-1.jpg" alt="мороженка" width="35" width="35">
+              </div>
+              <span class="basket-content__name">Пломбир с&nbsp;апельсиновым джемом</span>
+              <span class="basket-content__price-details">
+                1,5 кг&nbsp;x <span>200&nbsp;руб.</span>
+              </span>
+              <span class="basket-content__item-price">
+                300&nbsp;руб.
+              </span>
+            </li>
+            <li class="basket-content__item">
+              <button class="basket-content__remove-btn" type="button">Убрать из корзины</button>
+              <div class="basket-content__image-wrapper">
+                <img class="basket-content__image" src="img/ice-cream-img-3.jpg" alt="мороженка" width="35" width="35">
+              </div>
+              <span class="basket-content__name">Клубничный пломбир с&nbsp;присыпкой из&nbsp;белого шоколада</span>
+              <span class="basket-content__price-details">
+                1,5 кг&nbsp;x <span>300&nbsp;руб.</span>
+              </span>
+              <span class="basket-content__item-price">
+                450&nbsp;руб.
+              </span>
+            </li>
+          </ul>
+          <div class="basket-content__order">
+            <span class="basket-content__price">
+              Итого:
+              <span class="basket-content__price-number">750</span>
+              руб.
+            </span>
+            <button class="button" type="button">Оформить заказ</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="popup  popup--login  popup--hidden">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__window  popup__window--login">
+        <div class="login">
+          <form class="login__form clearfix" action="/echo" method="post">
+            <input class="text-input-field" type="text" placeholder="Электронная почта" name="email">
+            <input class="text-input-field" type="text" placeholder="Пароль" name="password">
+            <button class="button" type="submit">Войти</button>
+            <div class="login__link-wrapper">
+              <a class="link  link--black" href="#"><span>Забыли пароль?</span></a>
+              <a class="link  link--black" href="#"><span>Новая регистрация</span></a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="popup  popup--search  popup--hidden">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__window  popup__window--search">
+        <div class="search">
+          <input class="text-input-field" type="text" placeholder="Что ищем?" name="search-request">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="popup  popup--catalog">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__window  popup__window--catalog">
+        <div class="catalog-content">
+          <span class="catalog-content__title">Новинки</span>
+          <ul class="catalog-content__list">
+            <li class="catalog-content__item">
+              <a class="catalog-content__link"href="catalog.html">Сливочное</a>
+            </li>
+            <li class="catalog-content__item">
+              <a class="catalog-content__link"href="#">Щербеты</a>
+            </li>
+            <li class="catalog-content__item">
+              <a class="catalog-content__link"href="#">Фруктовый лед</a>
+             </li>
+            <li class="catalog-content__item">
+              <a class="catalog-content__link"href="#">Мелорин</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="popup">
+  <div class="popup__wrapper">
+    <div class="popup__content">
+      <div class="popup__window  popup__window--feedback">
+        <div class="feedback">
+          <button class="remove-btn" type="button">Закрыть форму</button>
+          <form class="feedback__form clearfix" action="/echo" method="post">
+            <span class="feedback__title">Мы обязательно вам ответим!</span>
+            <input class="text-input-field" type="text" placeholder="Как вас зовут?" name="email">
+            <input class="text-input-field" type="text" placeholder="Ваша почта для ответа?" name="password">
+            <textarea class="text-input-field  text-input-field--textarea" name="comment" id="comment" placeholder="Напишите что нибудь..." cols="30" rows="10"></textarea>
+            <button class="button" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>
