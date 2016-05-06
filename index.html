@@ -202,7 +202,7 @@
                   <div class="subscription__description">
                     <p>Подпишитесь на&nbsp;нашу сладкую рассылку и&nbsp;будете всегда в&nbsp;курсе всего самого вкусного, что у&nbsp;нас происходит. Обещаем не&nbsp;спамить и&nbsp;не&nbsp;слать всякой не&nbsp;нужной ерунды. Честно =)</p>
                   </div>
-                  <form class="subscription__form" action="/echo" enctype="multipart/form-data" method="post">
+                  <form class="subscription__form" action="/echo" method="post">
                     <input class="text-input-field" type="email" placeholder="Электронная почта" name="email">
                     <input class="button" type="submit" value="Отправить">
                   </form>
@@ -320,13 +320,18 @@
   </div>
 </div>
 
-<div class="popup  popup--login  popup--hidden">
+<div class="popup  popup--login popup--hidden">
   <div class="popup__wrapper">
     <div class="popup__content">
       <div class="popup__window  popup__window--login">
         <div class="login">
+          <form class="subscription__form" action="/echo" enctype="multipart/form-data" method="post">
+            <input class="text-input-field" type="email" placeholder="Электронная почта" name="email">
+            <input class="button" type="submit" value="Отправить">
+          </form>
           <form class="login__form clearfix" action="/echo" method="post">
             <input class="text-input-field" type="text" placeholder="Электронная почта" name="email">
+            <input class="text-input-field" type="email" placeholder="Электронная почта" name="email">
             <input class="text-input-field" type="text" placeholder="Пароль" name="password">
             <button class="button" type="submit">Войти</button>
             <div class="login__link-wrapper">
