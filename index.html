@@ -34,9 +34,28 @@
               </li>
             </ul>
             <div class="main-nav__user-nav">
-              <a class="main-nav__user-nav-item  main-nav__user-nav-item--search" href="#">Поиск</a>
-              <a class="main-nav__user-nav-item  main-nav__user-nav-item--login" href="" title="Войти">Вход</a>
-              <a class="main-nav__user-nav-item  main-nav__user-nav-item--basket" href="#">Пусто</a>
+              <div class="main-nav__user-nav-item  main-nav__user-nav-item--search">
+                <button class="main-nav__user-nav-btn main-nav__user-nav-btn--search" type="button">Поиск</button>
+              </div>
+              <div class="main-nav__user-nav-item  main-nav__user-nav-item--login">
+                <button class="main-nav__user-nav-btn  main-nav__user-nav-btn--login" type="button">Вход</button>
+                <div class="login">
+                  <form class="login__form clearfix" action="https://echo.htmlacademy.ru" method="post">
+                    <div class="text-input-field">
+                      <input class="text-input-field__field" type="text" name="login-user-name" id="login-user-name" required>
+                      <label class="text-input-field__label" for="login-user-name">Электронная почта</label>
+                    </div>
+                    <button class="button" type="submit">Войти</button>
+                    <div class="login__link-wrapper">
+                      <a class="link  link--black" href="#"><span>Забыли пароль?</span></a>
+                      <a class="link  link--black" href="#"><span>Новая регистрация</span></a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="main-nav__user-nav-item">
+                <button class="main-nav__user-nav-btn  main-nav__user-nav-btn--basket" type="button">Пусто</button>
+              </div>
             </div>
           </nav>
           <div class="call">
@@ -105,7 +124,7 @@
         <div class="ice-cream-list">
           <div class="ice-cream-list__wrapper">
             <article class="ice-cream-block">
-            <div class="ice-cream-block__view  ice-cream-block__view--hit">
+              <div class="ice-cream-block__view  ice-cream-block__view--hit">
                 <div class="ice-cream-block__image-wrapper">
                   <img class="ice-cream-block__image" src="img/ice-cream-img-1.jpg" width="266" height="266" alt="Мороженое">
                 </div>
@@ -203,7 +222,10 @@
                     <p>Подпишитесь на&nbsp;нашу сладкую рассылку и&nbsp;будете всегда в&nbsp;курсе всего самого вкусного, что у&nbsp;нас происходит. Обещаем не&nbsp;спамить и&nbsp;не&nbsp;слать всякой не&nbsp;нужной ерунды. Честно =)</p>
                   </div>
                   <form class="subscription__form" action="/echo" method="post">
-                    <input class="text-input-field" type="email" placeholder="Электронная почта" name="email">
+                    <div class="text-input-field">
+                      <input class="text-input-field__field" type="text" name="subscription-email" id="subscription-email" required>
+                      <label class="text-input-field__label" for="subscription-email">Электронная почта</label>
+                    </div>
                     <input class="button" type="submit" value="Отправить">
                   </form>
                 </div>
@@ -217,190 +239,185 @@
         <iframe height="429px" width="100%" frameBorder="0" scrolling="no"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d840.3751722293583!2d30.320843466741838!3d59.936120064599706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310f879780b7%3A0x267b6b7f4f614fb9!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDMxLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1457108867986">
       </iframe>
-    <div class="contact-block">
-      <div class="contact-block__contact">
-        <span class="contact-block__title">Адрес главного офиса и <span>офлайн магазина:</span></span>
-        <span class="contact-block__address">ул.&nbsp;Большая Конюшенная 19/8, <nobr>Санкт-Петербург</nobr></span>
-      </div>
-      <div class="contact-block__contact">
-        <span class="contact-block__title">Для заказов по&nbsp;телефону:</span>
-        <a class="contact-block__phone-number" href="tel:+78124502525"><nobr>8 812 450-25-25</nobr></a>
-        <span  class="contact-block__working-hours">(с&nbsp;10 до&nbsp;20 ежедневно)</span>
-      </div>
-      <a class="button">Форма обратной связи</a>
-    </div>
-</div>
-
-</main>
-
-<footer class="page-footer  page-footer--main-page">
-  <div class="page-footer__content">
-    <div class="page-footer__wrapper">
-      <div class="social-links">
-        <a class="social-links__btn" href="https://twitter.com/" target="_blank">Twitter
-          <svg class="social-links__icon"  width="30" height="30"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#social-tw"></use></svg>
-        </a>
-        <a class="social-links__btn" href="https://www.instagram.com/" target="_blank">Instagram
-          <svg class="social-links__icon"  width="30" height="30"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#social-inst"></use></svg>
-        </a>
-        <a class="social-links__btn" href="https://www.facebook.com/" target="_blank">Facebook
-          <svg class="social-links__icon"  width="30" height="30"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#social-fb"></use></svg>
-        </a>
-        <a class="social-links__btn" href="https://vk.com" target="_blank">Вконтакте
-          <svg class="social-links__icon"  width="30" height="30"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#social-vk"></use></svg>
-        </a>
-      </div>
-      <div class="additional-information clearfix">
-        <div class="additional-information__left">
-          <a class="link  link--heart" href="#"><span>Для поставщиков</span></a>
-          <a class="link" href="#"><span>О&nbsp;производстве</span></a>
+      <div class="contact-block">
+        <div class="contact-block__contact">
+          <span class="contact-block__title">Адрес главного офиса и <span>офлайн магазина:</span></span>
+          <span class="contact-block__address">ул.&nbsp;Большая Конюшенная 19/8, <nobr>Санкт-Петербург</nobr></span>
         </div>
-        <div class="additional-information__right">
-          <a class="link" href="#"><span>Наши документы</span></a>
-          <a class="link" href="#"><span>Экологические стандарты</span></a>
+        <div class="contact-block__contact">
+          <span class="contact-block__title">Для заказов по&nbsp;телефону:</span>
+          <a class="contact-block__phone-number" href="tel:+78124502525"><nobr>8 812 450-25-25</nobr></a>
+          <span  class="contact-block__working-hours">(с&nbsp;10 до&nbsp;20 ежедневно)</span>
         </div>
-      </div>
-      <div class="page-footer__copyright">
-        <a class="page-footer__copyright-logo" href="https://htmlacademy.ru/" target="_blank">
-          <img src="img/html-academy-logo.svg" width="108" height="37" alt="Gllacy Shop">
-        </a>
-        <span class="page-footer__copyright-text" href="https://htmlacademy.ru/" target="_blank">
-          Сделано в&nbsp;
-          <a class="link"  href="https://htmlacademy.ru/" target="_blank"><span>HTML Academy</span></a>
-          &copy; 2016
-        </span>
+        <a href="#" class="button feedbackBtn">Форма обратной связи</a>
       </div>
     </div>
-  </div>
-</footer>
-<div class="popup  popup--basket  popup--hidden">
-  <div class="popup__wrapper">
-    <div class="popup__content">
-      <div class="popup__window  popup__window--basket">
-        <div class="basket-content clearfix">
-          <ul class="basket-content__list">
-            <li class="basket-content__item">
-              <button class="basket-content__remove-btn" type="button">Убрать из корзины</button>
-              <div class="basket-content__image-wrapper">
-                <img class="basket-content__image" src="img/ice-cream-img-1.jpg" alt="мороженка" width="35" width="35">
-              </div>
-              <span class="basket-content__name">Пломбир с&nbsp;апельсиновым джемом</span>
-              <span class="basket-content__price-details">
-                1,5 кг&nbsp;x <span>200&nbsp;руб.</span>
+
+  </main>
+
+  <footer class="page-footer  page-footer--main-page">
+    <div class="page-footer__content">
+      <div class="page-footer__wrapper">
+        <div class="social-links">
+          <a class="social-links__btn" href="https://twitter.com/" target="_blank">Twitter
+            <svg class="social-links__icon"  width="30" height="30"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#social-tw"></use></svg>
+          </a>
+          <a class="social-links__btn" href="https://www.instagram.com/" target="_blank">Instagram
+            <svg class="social-links__icon"  width="30" height="30"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#social-inst"></use></svg>
+          </a>
+          <a class="social-links__btn" href="https://www.facebook.com/" target="_blank">Facebook
+            <svg class="social-links__icon"  width="30" height="30"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#social-fb"></use></svg>
+          </a>
+          <a class="social-links__btn" href="https://vk.com" target="_blank">Вконтакте
+            <svg class="social-links__icon"  width="30" height="30"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#social-vk"></use></svg>
+          </a>
+        </div>
+        <div class="additional-information clearfix">
+          <div class="additional-information__left">
+            <a class="link  link--heart" href="#"><span>Для поставщиков</span></a>
+            <a class="link" href="#"><span>О&nbsp;производстве</span></a>
+          </div>
+          <div class="additional-information__right">
+            <a class="link" href="#"><span>Наши документы</span></a>
+            <a class="link" href="#"><span>Экологические стандарты</span></a>
+          </div>
+        </div>
+        <div class="page-footer__copyright">
+          <a class="page-footer__copyright-logo" href="https://htmlacademy.ru/" target="_blank">
+            <img src="img/html-academy-logo.svg" width="108" height="37" alt="Gllacy Shop">
+          </a>
+          <span class="page-footer__copyright-text" href="https://htmlacademy.ru/" target="_blank">
+            Сделано в&nbsp;
+            <a class="link"  href="https://htmlacademy.ru/" target="_blank"><span>HTML Academy</span></a>
+            &copy; 2016
+          </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="popup  popup--basket  popup--hidden">
+    <div class="popup__wrapper">
+      <div class="popup__content">
+        <div class="popup__window  popup__window--basket">
+          <div class="basket-content clearfix">
+            <ul class="basket-content__list">
+              <li class="basket-content__item">
+                <button class="basket-content__remove-btn" type="button">Убрать из корзины</button>
+                <div class="basket-content__image-wrapper">
+                  <img class="basket-content__image" src="img/ice-cream-img-1.jpg" alt="мороженка" width="35" width="35">
+                </div>
+                <span class="basket-content__name">Пломбир с&nbsp;апельсиновым джемом</span>
+                <span class="basket-content__price-details">
+                  1,5 кг&nbsp;x <span>200&nbsp;руб.</span>
+                </span>
+                <span class="basket-content__item-price">
+                  300&nbsp;руб.
+                </span>
+              </li>
+              <li class="basket-content__item">
+                <button class="basket-content__remove-btn" type="button">Убрать из корзины</button>
+                <div class="basket-content__image-wrapper">
+                  <img class="basket-content__image" src="img/ice-cream-img-3.jpg" alt="мороженка" width="35" width="35">
+                </div>
+                <span class="basket-content__name">Клубничный пломбир с&nbsp;присыпкой из&nbsp;белого шоколада</span>
+                <span class="basket-content__price-details">
+                  1,5 кг&nbsp;x <span>300&nbsp;руб.</span>
+                </span>
+                <span class="basket-content__item-price">
+                  450&nbsp;руб.
+                </span>
+              </li>
+            </ul>
+            <div class="basket-content__order">
+              <span class="basket-content__price">
+                Итого:
+                <span class="basket-content__price-number">750</span>
+                руб.
               </span>
-              <span class="basket-content__item-price">
-                300&nbsp;руб.
-              </span>
-            </li>
-            <li class="basket-content__item">
-              <button class="basket-content__remove-btn" type="button">Убрать из корзины</button>
-              <div class="basket-content__image-wrapper">
-                <img class="basket-content__image" src="img/ice-cream-img-3.jpg" alt="мороженка" width="35" width="35">
-              </div>
-              <span class="basket-content__name">Клубничный пломбир с&nbsp;присыпкой из&nbsp;белого шоколада</span>
-              <span class="basket-content__price-details">
-                1,5 кг&nbsp;x <span>300&nbsp;руб.</span>
-              </span>
-              <span class="basket-content__item-price">
-                450&nbsp;руб.
-              </span>
-            </li>
-          </ul>
-          <div class="basket-content__order">
-            <span class="basket-content__price">
-              Итого:
-              <span class="basket-content__price-number">750</span>
-              руб.
-            </span>
-            <button class="button" type="button">Оформить заказ</button>
+              <button class="button" type="button">Оформить заказ</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 
-<div class="popup  popup--login popup--hidden">
-  <div class="popup__wrapper">
-    <div class="popup__content">
-      <div class="popup__window  popup__window--login">
-        <div class="login">
-          <form class="subscription__form" action="/echo" enctype="multipart/form-data" method="post">
-            <input class="text-input-field" type="email" placeholder="Электронная почта" name="email">
-            <input class="button" type="submit" value="Отправить">
-          </form>
-          <form class="login__form clearfix" action="/echo" method="post">
-            <input class="text-input-field" type="text" placeholder="Электронная почта" name="email">
-            <input class="text-input-field" type="email" placeholder="Электронная почта" name="email">
-            <input class="text-input-field" type="text" placeholder="Пароль" name="password">
-            <button class="button" type="submit">Войти</button>
-            <div class="login__link-wrapper">
-              <a class="link  link--black" href="#"><span>Забыли пароль?</span></a>
-              <a class="link  link--black" href="#"><span>Новая регистрация</span></a>
-            </div>
-          </form>
+  <div class="popup popup--login">
+    <div class="login">
+      <form class="login__form clearfix" action="https://echo.htmlacademy.ru" method="post">
+        <div class="text-input-field">
+        <input class="text-input-field__field" type="text" name="login-user-name" id="login-user-name" required>
+          <label class="text-input-field__label" for="login-user-name">Электронная почта</label>
+        </div>
+        <button class="button" type="submit">Войти</button>
+        <div class="login__link-wrapper">
+          <a class="link  link--black" href="#"><span>Забыли пароль?</span></a>
+          <a class="link  link--black" href="#"><span>Новая регистрация</span></a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="popup  popup--search  popup--hidden">
+    <div class="popup__wrapper">
+      <div class="popup__content">
+        <div class="popup__window  popup__window--search">
+          <div class="search">
+            <input class="text-input-field" type="text" placeholder="Что ищем?" name="search-request">
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 
-<div class="popup  popup--search  popup--hidden">
-  <div class="popup__wrapper">
-    <div class="popup__content">
-      <div class="popup__window  popup__window--search">
-        <div class="search">
-          <input class="text-input-field" type="text" placeholder="Что ищем?" name="search-request">
+  <div class="popup  popup--catalog  popup--hidden">
+    <div class="popup__wrapper">
+      <div class="popup__content">
+        <div class="popup__window  popup__window--catalog">
+          <div class="catalog-content">
+            <span class="catalog-content__title">Новинки</span>
+            <ul class="catalog-content__list">
+              <li class="catalog-content__item">
+                <a class="catalog-content__link"href="catalog.html">Сливочное</a>
+              </li>
+              <li class="catalog-content__item">
+                <a class="catalog-content__link"href="#">Щербеты</a>
+              </li>
+              <li class="catalog-content__item">
+                <a class="catalog-content__link"href="#">Фруктовый лед</a>
+              </li>
+              <li class="catalog-content__item">
+                <a class="catalog-content__link"href="#">Мелорин</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </div>
+
+  <div class="feedback">
+    <button class="cross-btn feedbackCrossBtn" type="button">Закрыть форму</button>
+    <form class="feedback__form clearfix" action="https://echo.htmlacademy.ru" method="post">
+      <span class="feedback__title">Мы обязательно вам ответим!</span>
+      <div class="text-input-field">
+        <input class="text-input-field__field" type="text" name="feedback-name" id="feedback-name" required>
+        <label class="text-input-field__label" for="feedback-name">Как вас зовут?</label>
+      </div>
+      <div class="text-input-field">
+        <input class="text-input-field__field" type="text" name="feedback-email" id="feedback-email"  required>
+        <label class="text-input-field__label" for="feedback-email">Ваша почта для ответа?</label>
+      </div>
+      <div class="text-input-field  text-input-field--textarea">
+        <textarea class="text-input-field__field  text-input-field__field--textarea" name="feedback-comment" id="feedback-comment" required></textarea>
+        <label class="text-input-field__label text-input-field__label--textarea" for="feedback-comment">Напишите что-нибудь...</label>
+      </div>
+      <button class="button" type="submit">Отправить</button>
+    </form>
+  </div>
+
 </div>
 
-<div class="popup  popup--catalog  popup--hidden">
-  <div class="popup__wrapper">
-    <div class="popup__content">
-      <div class="popup__window  popup__window--catalog">
-        <div class="catalog-content">
-          <span class="catalog-content__title">Новинки</span>
-          <ul class="catalog-content__list">
-            <li class="catalog-content__item">
-              <a class="catalog-content__link"href="catalog.html">Сливочное</a>
-            </li>
-            <li class="catalog-content__item">
-              <a class="catalog-content__link"href="#">Щербеты</a>
-            </li>
-            <li class="catalog-content__item">
-              <a class="catalog-content__link"href="#">Фруктовый лед</a>
-            </li>
-            <li class="catalog-content__item">
-              <a class="catalog-content__link"href="#">Мелорин</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="popup popup--hidden">
-  <div class="popup__wrapper">
-    <div class="popup__content">
-      <div class="popup__window  popup__window--feedback  popup--hidden">
-        <div class="feedback">
-          <button class="remove-btn" type="button">Закрыть форму</button>
-          <form class="feedback__form clearfix" action="/echo" method="post">
-            <span class="feedback__title">Мы обязательно вам ответим!</span>
-            <input class="text-input-field" type="text" placeholder="Как вас зовут?" name="email">
-            <input class="text-input-field" type="text" placeholder="Ваша почта для ответа?" name="password">
-            <textarea class="text-input-field  text-input-field--textarea" name="comment" id="comment" placeholder="Напишите что нибудь..." cols="30" rows="10"></textarea>
-            <button class="button" type="submit">Отправить</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
+<script src="js/feedback-popup.js"></script>
 </body>
 </html>
