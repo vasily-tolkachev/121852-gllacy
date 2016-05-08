@@ -45,7 +45,11 @@
                       <input class="text-input-field__field" type="text" name="login-user-name" id="login-user-name" required>
                       <label class="text-input-field__label" for="login-user-name">Электронная почта</label>
                     </div>
-                    <button class="button" type="submit">Войти</button>
+                    <div class="text-input-field">
+                      <input class="text-input-field__field" type="text" name="login-password" id="login-password" required>
+                      <label class="text-input-field__label" for="login-password">Пароль</label>
+                    </div>
+                    <button class="button  button--popup" type="submit">Войти</button>
                     <div class="login__link-wrapper">
                       <a class="link  link--black" href="#"><span>Забыли пароль?</span></a>
                       <a class="link  link--black" href="#"><span>Новая регистрация</span></a>
@@ -221,7 +225,7 @@
                   <div class="subscription__description">
                     <p>Подпишитесь на&nbsp;нашу сладкую рассылку и&nbsp;будете всегда в&nbsp;курсе всего самого вкусного, что у&nbsp;нас происходит. Обещаем не&nbsp;спамить и&nbsp;не&nbsp;слать всякой не&nbsp;нужной ерунды. Честно =)</p>
                   </div>
-                  <form class="subscription__form" action="/echo" method="post">
+                  <form class="subscription__form clearfix" action="https://echo.htmlacademy.ru" method="post">
                     <div class="text-input-field">
                       <input class="text-input-field__field" type="text" name="subscription-email" id="subscription-email" required>
                       <label class="text-input-field__label" for="subscription-email">Электронная почта</label>
