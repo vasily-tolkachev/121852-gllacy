@@ -1835,6 +1835,33 @@ body {
   height: 429px;
 }
 
+.no-js .map {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../img/map.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: 1200px 430px;
+}
+
+.no-js .map:after {
+  content: '';
+  position: absolute;
+  top: 137px;
+  left: 266px;
+  width: 220px;
+  height: 139px;
+  background-image: url(../img/map-marker-shadow.png), url(../img/map-marker.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: 37px 30px, 0 0;
+  background-size: 182px 110px, 79px 139px;
+}
+
+.no-js .map__iframe {
+  display: none;
+}
+
 .contact-block {
   position: absolute;
   top: 62px;
