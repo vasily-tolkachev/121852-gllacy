@@ -518,6 +518,7 @@ body {
 
 .main-nav__user-item--search span {
   display: none;
+  font-size: 0;
 }
 
 .main-nav__user-item--search .main-nav__icon {
