@@ -104,6 +104,10 @@ body {
   clear: both;
 }
 
+.svg-sprite {
+  display: none;
+}
+
 .inner-page-wrapper {
   background-image: url(../img/backlight.png);
   background-position: 0 0;
@@ -434,10 +438,6 @@ body {
   background-color: #d07058;
 }
 
-.main-nav__link--current-page:after {
-  display: none;
-}
-
 .main-nav__item:hover .main-nav__link {
   background-color: #ffffff;
   color: #323232;
@@ -455,6 +455,10 @@ body {
   background-color: #ffffff;
   color: #323232;
   box-shadow: inset 0 2px 1px 0 rgba(105,105,105,1);
+}
+
+.main-nav__link--current-page:after {
+  display: none;
 }
 
 .main-nav__item--catalog:after  .main-nav__link:active {
@@ -652,10 +656,7 @@ body {
 }
 
 .link span {
-  display: inline;
-  background-image: url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8bwwAAjcBNBRvLA0AAAAASUVORK5CYII=);
-  background-repeat: repeat-x;
-  background-position: center 1.25em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .link:hover {
@@ -663,7 +664,7 @@ body {
 }
 
 .link:hover span{
-  background-image: url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8v2eeDwAHwgKnoeeXtAAAAABJRU5ErkJggg==);
+  border-bottom: 1px solid rgba(255, 188, 158, 0.3);
 }
 
 .link:active {
@@ -671,7 +672,7 @@ body {
 }
 
 .link:active span{
-  background-image: url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8v2eeDwAHwgKnoeeXtAAAAABJRU5ErkJggg==);
+  border-bottom: 1px solid rgba(255, 188, 158, 0.3);
 }
 
 .link--dark {
@@ -679,7 +680,7 @@ body {
 }
 
 .link--dark span {
-  background-image: url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mM08gEAALYAgBBEi0UAAAAASUVORK5CYII=);
+  border-bottom: 1px solid rgba(50, 50, 50, 0.3);
 }
 
 .link--dark:hover {
@@ -687,7 +688,7 @@ body {
 }
 
 .link--dark:hover span {
-  background-image: url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN84WvuAwAFSwG6PbHW0AAAAABJRU5ErkJggg==);
+ border-bottom: 1px solid rgba(232, 77, 55, 0.3);
 }
 
 .link--dark:active {
@@ -695,7 +696,7 @@ body {
 }
 
 .link--dark:active span {
-  background-image: url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN84WvuAwAFSwG6PbHW0AAAAABJRU5ErkJggg==);
+  border-bottom: 1px solid rgba(232, 77, 55, 0.3);
 }
 
 .breadcrumb {
@@ -718,19 +719,17 @@ body {
   font-size: 14px;
   line-height: 16px;
   padding: 0;
-  padding-right: 17px;
   margin: 0;
 }
 
 .breadcrumb__item .link::after {
-  display: block;
   content: '»';
+  font-family: 'Roboto Regular', 'Arial', sans-serif;
+  font-size: 14px;
+  line-height: 16px;
   color: #ffffff;
-  position: absolute;
-  right: 0;
-  top: 2px;
-  width: 10px;
-  height: 15px;
+  margin-left: 7px;
+  margin-right: 3px;
 }
 
 .breadcrumb__item:last-of-type:hover .link{
@@ -738,11 +737,11 @@ body {
 }
 
 .breadcrumb__item:last-of-type span {
-  background: none;
+  border: none;
 }
 
 .breadcrumb__item:last-of-type:hover span {
-  background: none;
+  border: none;
 }
 
 .breadcrumb__item:last-of-type .link::after {
@@ -1092,7 +1091,7 @@ body {
 .ice-cream-block__price {
   display: block;
   position: absolute;
-  top: 77%;
+  top: 207px;
   left: 0;
   font-family: 'Roboto Bold', 'Arial', sans-serif;
   font-size: 0;
@@ -1742,16 +1741,18 @@ body {
 }
 
 .link--blog span{
-  background-position: 0 1.15em;
-  background-image: url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAQAAAAziH6sAAAADklEQVR42mM0+s9o9B8ABmgCZW8wq8YAAAAASUVORK5CYII=);
+  border-width: 2px;
+  border-color: #323232;
 }
 
 .link--blog:hover span{
-  background-image: url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAEElEQVR42mN84Wv+nxFEAAAYGATZdmUtCwAAAABJRU5ErkJggg==);
+ border-width: 2px;
+ border-color: #e84d37;
 }
 
 .link--blog:active span{
-  background-image: url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAEElEQVR42mN84Wv+nxFEAAAYGATZdmUtCwAAAABJRU5ErkJggg==);
+ border-width: 2px;
+ border-color: #e84d37;
 }
 
 .subscription {
@@ -1805,6 +1806,7 @@ body {
   margin-left: 12px;
 }
 
+/* Фоновая картинка карты задана в правиле .no-js .map {} */
 .map {
   display: block;
   margin-top: 21px;
